@@ -1,0 +1,9 @@
+---
+# tasks file for kostyrevaa.ibm-dsa
+- name: download dsa
+  get_url:
+    url: https://delivery04.dhe.ibm.com/sar/CMA/XSA/05and/4/lnvgy_utl_dsa_dsala5q-10.1_portable_rhel6_x86-64.bin
+    validate_certs: no
+    dest: /opt
+    mode: '0550'
+
